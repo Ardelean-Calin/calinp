@@ -1,4 +1,4 @@
-baseurl = "https://example.com/"
+baseurl = "https://calinp.dev/"
 title = "Calin's DevBlog"
 theme = "hugo-theme-console"
 languageCode = "en-us"
