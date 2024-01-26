@@ -34,6 +34,15 @@
   <!---->
   {{ $css := slice $main $custom | resources.Concat "main.css" | minify }}
   <link rel="preload stylesheet" as="style" href="{{ $css.Permalink }}" />
+  {{ if and .Site.Params.umami.enabled (not .Site.IsServer) }}
+  <script
+    async
+    defer
+    data-website-id="{{ .Site.Params.umami.websiteId }}"
+    src="{{ .Site.Params.umami.jsLocation }}"
+  ></script>
+  {{ end }}
+
 
   <!-- Dark Icon -->
   {{ $dark_icon := "theme.png" }}
