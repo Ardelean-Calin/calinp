@@ -1,4 +1,4 @@
-baseURL = "https://calinp.dev/"
+baseURL = "https://blog.calinp.dev/"
 author = "Calin-Petru"
 copyright = "Copyright © 2024, all rights reserved."
 paginate = 3
