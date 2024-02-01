@@ -24,7 +24,7 @@ title = "Calin's DevBlog"
 
 [params.umami]
   enabled = true
-  websiteId = "9e4e7453-16c1-4f75-a356-1c2bacc13b4a"
+  websiteId = "ce37afb9-aa01-41df-a0d4-41e53dd30bd4"
   jsLocation = "https://umami.calin.cloud/script.js"
 # ------------------------------
 
