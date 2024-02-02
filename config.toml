@@ -2,7 +2,7 @@ baseURL = "https://blog.calinp.dev/"
 author = "Calin-Petru"
 copyright = "Copyright © 2024, all rights reserved."
 paginate = 3
-languageCode = "en"
+languageCode = "en-US"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
@@ -13,6 +13,8 @@ ignoreErrors = ["error-remote-getjson"]
 theme = "hugo-theme-console"
 title = "Calin's DevBlog"
 
+titleCutting = false
+animateStyle = "animated zoomIn fast" 
 [params]
   color = 'linen'
 
@@ -22,10 +24,20 @@ title = "Calin's DevBlog"
   name = 'Călin'
   bio = 'Embedded Software and Hardware Engineer'
 
+  enablePhotos = false
+
 [params.umami]
   enabled = true
   websiteId = "ce37afb9-aa01-41df-a0d4-41e53dd30bd4"
   jsLocation = "https://umami.calin.cloud/script.js"
+
+[[params.navlinks]]
+  name = "about/"
+  url = "about/"
+
+[[params.navlinks]]
+  name = "posts/"
+  url = "posts/"
 # ------------------------------
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
@@ -37,7 +49,6 @@ title = "Calin's DevBlog"
 #    lineNos = true
 
 [menu]
-
   [[menu.main]]
     identifier = "about"
     name = "About"
